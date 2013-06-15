@@ -51,7 +51,11 @@ end
 
 get '/survey/:survey_id' do |survey_id|
   @survey = Survey.find(survey_id)
-  erb :survey
+  if @survey.completions.where("user_id = ?",current_user.id).length == 0
+    erb :survey
+  else
+    erb :survey_results
+  end
 end
 
 post '/survey/:id' do

@@ -1,0 +1,13 @@
+<ul>
+  <% @survey.questions.each do |question| %>
+    <% total_responses = question.responses.length %>
+    <li> <h4><%= question.question_text %></h4> 
+      <% question.choices.each do |choice| %>
+        <%= choice.choice_text + ": " + choice.responses.length.to_s %><br>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+  <br><br>
+
+  <%= "Number of submissions: " + @survey.completions.length.to_s %>
