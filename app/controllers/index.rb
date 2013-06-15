@@ -55,10 +55,17 @@ get '/survey/:survey_id' do |survey_id|
 end
 
 post '/survey/:id' do
-  p params
-end
+  @survey = Survey.find(params[:id])
+  responses = []
 
-get '/test/*/*' do
-  p params
+  if params[:responses].length == @survey.questions.length
+    params[:responses].each do |question_id, choice_id|
+      responses << Response.create(question_id: question_id, choice_id: choice_id, user_id: current_user.id)
+    end
+    Completion.create(survey: @survey, user: current_user)
+    redirect "/profile/#{current_user.id}"
+  else
+    @error = "Didn't answer every question."
+    erb :survey
+  end
 end
-
