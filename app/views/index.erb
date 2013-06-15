@@ -1,0 +1,19 @@
+<h1>Welcome to our Survey Project</h1>
+
+
+<form id="login_form" class="clear" method="Post" action="/login">
+  <input id="email_box" type="email" name="user[email]" placeholder="Email..">
+  <input id="pass_box" type="password" name="user[password]" placeholder="Password..">
+  <input id="sweet_button" value="login" type="submit" action="submit">
+</form>
+
+<br><br>
+<form class="new_user_form" method="Post" action="/users/new" >
+  <input type="text" name="user[name]" placeholder="Name.." autocomplete="off"></br>
+  <input type="email" name="user[email]" placeholder="Email.." autocomplete="off"></br>
+  <input type="password" name="user[password]" placeholder="Password.." autocomplete="off"></br>
+  <input type="password" name="user[password_confirmation]" placeholder="Re-enter Password.." autocomplete="off"></br>
+  <input value="create account" id="log_sub" type="submit">
+</form>
+
+

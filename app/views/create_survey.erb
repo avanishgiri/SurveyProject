@@ -1,0 +1,20 @@
+
+<form id="create_survey" method="POST" action="/survey/new">
+  <div id="questions-answers">
+    <input type="text" name="topic" placeholder="Topic"/>
+    <br>
+    <fieldset class="question">
+        <input type="text" name="question1[]" placeholder="Question" />
+        <button class="add-answer">Add another answer!</button><br>
+        <input class="answer" type="text" name="question1[]" placeholder="Answer" /><br />
+    </fieldset>
+  </div>
+    <br><br>
+    <button class="add-question">Add another question!</button>
+    <input value='submit' type='submit'>
+</form>
+
+
+
+
+
