@@ -1,19 +1,31 @@
-<h1>Welcome to our Survey Project</h1>
-
-
+<div class="container">
 <form id="login_form" class="clear" method="Post" action="/login">
+	<h3>Been here before? Sign in...</h3>
   <input id="email_box" type="email" name="user[email]" placeholder="Email..">
   <input id="pass_box" type="password" name="user[password]" placeholder="Password..">
-  <input id="sweet_button" value="login" type="submit" action="submit">
+  <input class="button" value="login" type="submit" action="submit">
 </form>
 
 <br><br>
-<form class="new_user_form" method="Post" action="/users/new" >
-  <input type="text" name="user[name]" placeholder="Name.." autocomplete="off"></br>
+<form id="new_user_form" method="Post" action="/users/new" >
+	<h3>New to SurveyGorilla? Create your account now!</h3>
+  <input type="text" name="user[name]" placeholder="Name.." autocomplete="off">
   <input type="email" name="user[email]" placeholder="Email.." autocomplete="off"></br>
-  <input type="password" name="user[password]" placeholder="Password.." autocomplete="off"></br>
+  <input type="password" name="user[password]" placeholder="Password.." autocomplete="off">
   <input type="password" name="user[password_confirmation]" placeholder="Re-enter Password.." autocomplete="off"></br>
-  <input value="create account" id="log_sub" type="submit">
+  <input class="button" value="create account" id="log_sub" type="submit">
 </form>
+
+<div id="inner"></div>
+<div><img src="http://www.the3dstudio.com/download_image.ashx?size=large&mode=product&file_guid=3dc486a6-3749-4812-84fd-0548946720a2"/></div>
+
+
+<div id="info1"><h3>Need to Reach a Targeted Audience?</h3><p>Looking for the right people to fill out your survey? Meet SurveyGorilla Audience, home to millions of qualified respondents ready to take your surveys and give you the feedback you need to make better decisions.</p></div>
+<div id="info2"><h3>Surveys Made Easy</h3><p>SurveyGorilla is the world's most popular online survey tool. It's easier than ever to send free surveys, polls, questionnaires, customer feedback and market research. Plus get access to survey questions and professional templates.</p></div>
+</div>
+
+
+
+
 
 

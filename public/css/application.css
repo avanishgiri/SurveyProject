@@ -1,22 +1,156 @@
-.container {
-  margin: 20px auto;
-  width: 600px;
-  padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+html, body { margin: 0; padding: 0; }
+
+body {
+	background-color: #fcfdfd;
 }
+
+.container {
+  margin: 0px auto;
+  margin-top: 30px;
+  width: 900px;
+  border: 1px dotted black;
+  background-color: #71a3a8;
+  height: 380px;
+  border-radius: 5px;
+  margin-bottom: 330px;
+  border: none;
+  padding-top: 20px;
+  position: relative;
+}
+
+#new_user_form {
+	background-color: #eee;
+	width: 600px;
+	padding: 20px;
+	border-radius: 5px;
+	margin-left: 30px;
+}
+
+#login_form {
+	background-color: #eee;
+	width: 600px;
+	padding: 20px;
+	border-radius: 5px;
+	margin-left: 30px;
+}
+
+form h3 {
+	font-family: verdana;
+	font-weight: 400;
+}
+
+form input {
+	border-radius: 2px;
+	padding: 5px;
+	margin-bottom: 5px; 
+}
+
+.button {
+	background-color: #c39b88;
+}
+
+strong h1 {
+	padding-top: 40px;
+	color: #202020;
+	font-weight: 500;
+	font-family: verdana;
+	margin-left: 165px;
+	font-size: 60px;
+}
+
 th {
   text-align: left;
+}
+
+nav {
+	height: 100px;
+	width: 100%;
+	background-color: #eee;
+	box-shadow: 0px 5px 6px ;
+	box-shadow-color: gray;
+}
+
+img {
+	position: absolute;
+	height: 170px;
+	z-index: -1;
+	padding-top: 110px;
+	padding-left: 440px;
+}
+
+#inner {
+	background-color: #c39b88;
+	height: 50px; 	
+	width: 900px;
+	margin-top: 30px;
+	*  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;*/
+}
+
+#info1 {
+	border: 1px solid gray;
+	height: 160px;
+	width: 460px;
+	float: left;
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 40px;
+
+}
+
+#info2 {
+	border: 1px solid gray;
+	height: 160px;
+	width: 320px;
+	border-radius: 5px;
+	float: right;
+	padding: 20px;
+	margin-top: 40px;
+}
+
+p {
+	font-family: verdana;
+}
+
+h3 {
+	margin-top: 0px;
 }
 
 nav li {
   display: inline;
   list-style: none;
+  padding-top: 30px;
+}
+
+nav li a {
+	text-decoration: none;
+}
+
+nav li.right {
+	float: right;
+	padding-right: 30px;
+}
+
+nav li.left {
+	float: left;
 }
 
 li {
   list-style: none;
 }
 
+.footer {
+	height: 200px;
+	background-color: #eee; 
+	bottom: 0;
+	width: 100%;
+	
+}
+
 .error {
   color: red;
 }
+
+
