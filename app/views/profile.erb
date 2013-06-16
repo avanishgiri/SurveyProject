@@ -1,8 +1,14 @@
-<%= current_user.name %>
 
+<div id="profile">
+<img id="gravatar" src="<%= gravatar_url(current_user.email) %>"></img><br><br><br>
+<%= current_user.name %><br><br><br>
+<div id="surveys_to_take">
 <%@surveys.each do |survey|%>
   <ul>
     <li><a href="/survey/<%=survey.id%>"><%=survey.title%></a><li>
   </ul>
 <%end%>
+</div>
 
+</div>
+<div id="profile-footer"></div>

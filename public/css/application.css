@@ -1,4 +1,7 @@
-html, body { margin: 0; padding: 0; }
+html, body { 
+	margin: 0; 
+	padding: 0; 
+}
 
 body {
 	background-color: #fcfdfd;
@@ -6,15 +9,15 @@ body {
 
 .container {
   margin: 0px auto;
-  margin-top: 30px;
+  margin-top: 120px;
   width: 900px;
   border: 1px dotted black;
   background-color: #71a3a8;
-  height: 380px;
+  height: 400px;
   border-radius: 5px;
   margin-bottom: 330px;
   border: none;
-  padding-top: 20px;
+  padding-top: 30px;
   position: relative;
 }
 
@@ -22,6 +25,7 @@ body {
 	background-color: #eee;
 	width: 600px;
 	padding: 20px;
+	/*padding-top: 30px;*/
 	border-radius: 5px;
 	margin-left: 30px;
 }
@@ -46,15 +50,15 @@ form input {
 }
 
 .button {
-	background-color: #c39b88;
+	background-color: #ada692;
 }
 
 strong h1 {
-	padding-top: 40px;
+	margin-top: 20px;
 	color: #202020;
 	font-weight: 500;
 	font-family: verdana;
-	margin-left: 165px;
+	margin-left: 15%;
 	font-size: 60px;
 }
 
@@ -63,46 +67,53 @@ th {
 }
 
 nav {
-	height: 100px;
+	position: absolute;
+	top: 0px;
+	height: 80px;
 	width: 100%;
 	background-color: #eee;
 	box-shadow: 0px 5px 6px ;
-	box-shadow-color: gray;
+	/*box-shadow-color: gray;*/
 }
 
-img {
+#gravatar {
+	border: 2px solid #ada692;
+	border-radius: 5px;
+}
+
+
+#fun {
 	position: absolute;
 	height: 170px;
-	z-index: -1;
-	padding-top: 110px;
+	/*z-index: -1;*/
+	padding-top: 135px;
 	padding-left: 440px;
 }
 
 #inner {
-	background-color: #c39b88;
-	height: 50px; 	
+	background-color: #ada692;
+	height: 30px; 	
 	width: 900px;
-	margin-top: 30px;
+	margin-top: 50px;
 	*  -moz-border-radius-bottomright: 5px;
-  -webkit-border-bottom-right-radius: 5px;
-  -moz-border-radius-bottomleft: 5px;
-  -webkit-border-bottom-left-radius: 5px;*/
+  	-webkit-border-bottom-right-radius: 5px;
+  	-moz-border-radius-bottomleft: 5px;
+  	-webkit-border-bottom-left-radius: 5px;*/
 }
 
 #info1 {
 	border: 1px solid gray;
-	height: 160px;
+	height: 180px;
 	width: 460px;
 	float: left;
 	border-radius: 5px;
 	padding: 20px;
 	margin-top: 40px;
-
 }
 
 #info2 {
 	border: 1px solid gray;
-	height: 160px;
+	height: 180px;
 	width: 320px;
 	border-radius: 5px;
 	float: right;
@@ -121,11 +132,17 @@ h3 {
 nav li {
   display: inline;
   list-style: none;
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 nav li a {
 	text-decoration: none;
+	color: black;
+}
+
+nav li a:hover {
+	text-decoration: none;
+	color: gray;
 }
 
 nav li.right {
@@ -141,12 +158,66 @@ li {
   list-style: none;
 }
 
-.footer {
-	height: 200px;
-	background-color: #eee; 
-	bottom: 0;
-	width: 100%;
-	
+#create_survey {
+	margin-top: 160px;
+	margin-left: 40px;
+	margin-right: 40px;
+	background-color: #eee;
+	border-radius: 5px;
+	border: 2px solid black;
+	padding: 20px;
+	margin-bottom: 100px;
+}
+
+#front_footer {
+	height: 240px;
+	background-color: #b3b1b2; 
+	width: 900px;
+	border-radius: 5px;
+	margin: 0px auto;
+}
+
+#profile {
+	margin-top: 160px;
+	margin-left: 40px;
+	margin-right: 40px;
+	background-color: #eee;
+	border-radius: 5px;
+	border: 2px solid black;
+	padding: 20px;
+	margin-bottom: 100px;
+}
+
+
+#surveys_to_take {
+	border: 1px solid black;
+	/*padding: 20px;*/
+	border-radius: 5px;
+}
+
+#surveys_to_take li a {
+	text-decoration: none;
+	/*display: inline;*/
+}
+
+#surveys_to_take li {
+	display: inline;
+}
+
+#survey {
+	margin-top: 150px;
+	margin-left: 40px;
+}
+
+#results {
+	margin-top: 160px;
+	margin-left: 40px;
+	margin-right: 40px;
+	background-color: #eee;
+	border-radius: 5px;
+	border: 2px solid black;
+	padding: 20px;
+	margin-bottom: 100px;
 }
 
 .error {

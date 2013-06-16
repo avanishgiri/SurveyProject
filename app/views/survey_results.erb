@@ -1,4 +1,7 @@
+<div id="results">
+
 <ul>
+  <h3><%=@survey.title%></h3>
   <% @survey.questions.each do |question| %>
     <% total_responses = question.responses.length %>
     <li> <h4><%= question.question_text %></h4> 
@@ -7,7 +10,10 @@
       <% end %>
     </li>
   <% end %>
-</ul>
-  <br><br>
-
+<br><br>
   <%= "Number of submissions: " + @survey.completions.length.to_s %>
+</ul>
+  
+
+  
+</div>

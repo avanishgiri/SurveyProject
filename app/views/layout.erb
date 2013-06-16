@@ -14,36 +14,22 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
-
-
-
-
   <title></title>
 </head>
 <body>
   <nav>
     <ul>
       <% if current_user %>
-      <li class="left" >
-        
-        <a href="/survey/new">Create a Survey!</a>
-      </li>
-      <li class="right" >
-        <a href="/profile/<%=current_user.id%>">Profile</a>
-      </li>
-      <li class="right" >
-        <a href="/logout">Logout</a>
-      </li>
+        <li class="left"><a href="/survey/new">Create a Survey!</a></li>
+        <li class="right"><a href="/logout">Logout</a></li>
+        <li class="right"><a href="/profile/<%=current_user.id%>">Profile</a></li>
       <%else%>
-
-      <strong><h1>SurveyGorilla</h1></strong>
+        <strong><h1>SurveyGorilla</h1></strong>
       <% end %>
     </ul>
   </nav>
 
-
   <%= yield %>
 
-  <div class="footer"></div>
 </body>
 </html>
