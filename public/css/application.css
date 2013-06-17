@@ -13,7 +13,7 @@ body {
   width: 900px;
   border: 1px dotted black;
   background-color: #71a3a8;
-  height: 400px;
+  height: 410px;
   border-radius: 5px;
   margin-bottom: 330px;
   border: none;
@@ -25,9 +25,10 @@ body {
 	background-color: #eee;
 	width: 600px;
 	padding: 20px;
-	/*padding-top: 30px;*/
+	margin-top: 5px;
 	border-radius: 5px;
-	margin-left: 30px;
+	margin-left: 45px;
+	margin-bottom: 5px;
 }
 
 #login_form {
@@ -35,12 +36,17 @@ body {
 	width: 600px;
 	padding: 20px;
 	border-radius: 5px;
-	margin-left: 30px;
+	margin-left: 45px;
+	margin-top: 13px;
 }
 
 form h3 {
 	font-family: verdana;
 	font-weight: 400;
+}
+
+h4 {
+	padding-left: 40px;
 }
 
 form input {
@@ -85,16 +91,16 @@ nav {
 #fun {
 	position: absolute;
 	height: 170px;
-	/*z-index: -1;*/
-	padding-top: 135px;
-	padding-left: 440px;
+	z-index: -1;
+	padding-top: 140px;
+	padding-left: 430px;
 }
 
 #inner {
 	background-color: #ada692;
 	height: 30px; 	
 	width: 900px;
-	margin-top: 50px;
+	margin-top: 40px;
 	*  -moz-border-radius-bottomright: 5px;
   	-webkit-border-bottom-right-radius: 5px;
   	-moz-border-radius-bottomleft: 5px;
@@ -175,6 +181,7 @@ li {
 	width: 900px;
 	border-radius: 5px;
 	margin: 0px auto;
+	border: 2px solid #202020;
 }
 
 #profile {
@@ -191,13 +198,16 @@ li {
 
 #surveys_to_take {
 	border: 1px solid black;
-	/*padding: 20px;*/
 	border-radius: 5px;
 }
 
 #surveys_to_take li a {
 	text-decoration: none;
-	/*display: inline;*/
+	color: #202020;
+}
+
+#surveys_to_take li a:hover {
+	color: gray;
 }
 
 #surveys_to_take li {
@@ -205,8 +215,14 @@ li {
 }
 
 #survey {
-	margin-top: 150px;
+	margin-top: 160px;
 	margin-left: 40px;
+	margin-right: 40px;
+	background-color: #eee;
+	border-radius: 5px;
+	border: 2px solid black;
+	padding: 20px;
+	margin-bottom: 100px;
 }
 
 #results {

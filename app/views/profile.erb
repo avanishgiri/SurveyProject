@@ -3,10 +3,22 @@
 <img id="gravatar" src="<%= gravatar_url(current_user.email) %>"></img><br><br><br>
 <%= current_user.name %><br><br><br>
 <div id="surveys_to_take">
+<h4>All Available Surveys</h4>
 <%@surveys.each do |survey|%>
   <ul>
     <li><a href="/survey/<%=survey.id%>"><%=survey.title%></a><li>
   </ul>
+<%end%>
+</div>
+
+<div id="surveys_completed">
+<h4>Your Completed Surveys</h4>
+<%if @completed%>
+<%@completed.each do |survey|%>
+  <ul>
+    <li><a href="/survey/<%=survey.id%>"><%=survey.title%></a><li>
+  </ul>
+<%end%>
 <%end%>
 </div>
 

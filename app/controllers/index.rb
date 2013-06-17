@@ -27,6 +27,14 @@ get '/profile/:id' do
   p params
   redirect '/' unless current_user
   @surveys = Survey.all
+  all_completed = Completion.all
+
+  @completed = []
+  all_completed.each do |completed|
+    if completed.user_id == current_user.id
+      @completed << Survey.find(completed.survey_id)
+    end
+  end
   erb :profile
 end
 
